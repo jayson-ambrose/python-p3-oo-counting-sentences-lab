@@ -37,7 +37,7 @@ class MyString:
     for p in ["!", "?"]:
       string = string.replace(p, '.')
 
-    sentences = [s for s in string.split(".") if s]
+    sentences = [s for s in string.split(".") if len(s) > 0]
 
     return len(sentences)
 
